@@ -1,67 +1,56 @@
-# RLMmods
+# RLMmods — Randomize Loadouts
 
-**Save, Load and Randomize buttons for the Helldivers 2 Hellpod loadout screen.**
+**헬다이버즈 2 출격 로드아웃을 버튼 한 번에 랜덤으로 짜 주는 모드입니다.**
 
-[한국어 안내](README.ko.md) · [Download (Releases)](https://github.com/modocracy/RLMods/releases)
+[다운로드 (Releases)](https://github.com/modocracy/RLMods/releases) · [English](README.en.md)
 
 > Uses research from HD2Runtime by SkyeShade — https://github.com/SkyeShade/HD2Runtime
 
-## Features
+## 기능
 
-| Button | What it does |
-| --- | --- |
-| **Save** | Stores your current stratagems, booster, helmet, armor, cape, primary, secondary and grenade. |
-| **Load** | Restores the saved loadout. Slots already matching are left alone; anything not selectable right now (mission rules, a squadmate's booster, not owned) is skipped. |
-| **Randomize** | Picks a random loadout from what the game lists as selectable for you. |
+**랜덤:** 스트라타젬 4칸, 부스터, 헬멧·방어구·망토, 주무기·보조무기·수류탄을 한 번에 무작위로 바꿉니다.
 
-Randomize rules:
+- 지금 고를 수 있는 장비 중에서만 고릅니다(해금·임무 제한 그대로).
+- 스트라타젬: 배낭류·차량(엑소수트·FRV·탱크)·지원무기 **각각 최대 1개**.
+- 부스터: '미선택'과 팀원이 이미 가져온 부스터는 제외.
 
-- Four stratagems with **at most one** backpack, **one** vehicle (exosuit, FRV or tank) and **one** support weapon.
-- The booster is never "none" and never one a squadmate already brought.
-- Helmet, armor, cape, primary, secondary and grenade change too.
+**저장 / 불러오기 (보조):** 평소 구성을 1칸 저장해 두고 한 번에 되돌립니다. 지금 고를 수 없는 칸만 건너뜁니다.
 
-Everything goes through the game's own lists and equip routines, so locked items, mission restrictions and squad rules are respected. Load does not apply the randomize-only rules above; it keeps the game's own one-per-kind vehicle rule.
+## 조작
 
-## Controls
+버튼은 **장비구성 탭**에서 내 카드 오른쪽에 나타납니다.
 
-The three buttons sit on the right edge of your player card and appear with the card on the **loadout tab** (not while choosing the drop site).
+- **마우스:** 클릭
+- **키보드·패드:** **R 장비** 막대에서 **↑** → 버튼 선택, **↑↓** 이동, **선택키** 실행. **↓·←·→·뒤로**로 돌아갑니다.
 
-- **Mouse:** click a button.
-- **Keyboard / controller:** move up to the **R Equipment** bar, press **Up** again to reach Randomize, **Up/Down** to move between buttons, **Select** to run one. **Down** from Randomize, **Left/Right** or **Back** return to the bar.
+## 설치
 
-## Install
+1. 게임 종료
+2. **HD2MM** 또는 **Arsenal**에서 예전 RLMmods 끄기
+3. [Releases](https://github.com/modocracy/RLMods/releases)의 `RLMmods-1.0.0.zip` 가져오기 → 활성화 → **Deploy**
 
-1. Close the game.
-2. In **HD2MM** or **Arsenal**, disable any older RLMmods package.
-3. Import `RLMmods-1.0.0.zip` from [Releases](https://github.com/modocracy/RLMods/releases), enable it and **Deploy**.
+제거: 게임 종료 → RLMmods 끄기 → Purge/Deploy
 
-Remove: close the game, disable RLMmods in the same manager, then Purge/Deploy.
+## 주의
 
-## Compatibility
+- **게임 빌드 25480438 전용.** 다른 빌드에서는 스스로 꺼지고 게임은 정상 실행됩니다. 게임 업데이트 후엔 새 버전까지 꺼 두세요.
+- `boot.lua`를 교체하는 다른 모드와 함께 쓸 수 없습니다. Bingus Shared Loader는 괜찮습니다.
+- 해금·안티치트 우회 없음, 외부 전송 없음. 사용 책임은 본인에게 있습니다.
+- 멀티플레이는 덜 테스트됐습니다. 문제가 있으면 `%LOCALAPPDATA%\RLMmods\RLMmods.log`와 함께 알려 주세요.
 
-- **Game build 25480438 only.** On any other build RLMmods enables nothing and the game runs normally. After a game update, **disable RLMmods until a new release is out**.
-- RLMmods replaces the game's `boot.lua`, so it **cannot be used with other mods that replace `boot.lua`**. Bingus Shared Loader can stay enabled.
-- Multiplayer and play after deployment have been tried less than the loadout screen itself. Please report problems with your log.
+저장 파일: `%LOCALAPPDATA%\RLMmods\loadout-1.txt` (내 PC에만 저장)
 
-## Files on your PC
+## 출처
 
-| Path | Purpose |
-| --- | --- |
-| `%LOCALAPPDATA%\RLMmods\loadout-1.txt` | Your saved loadout (one slot, local only). |
-| `%LOCALAPPDATA%\RLMmods\RLMmods.log` | What each action did. Rotated to `RLMmods.old.log` past 1 MiB. |
+- **HD2Runtime by SkyeShade** — https://github.com/SkyeShade/HD2Runtime : 스트라타젬 분류·배낭 지원무기 목록, 소유 판정 규칙, 메뉴 입력 구조
+- **[Alomare/FlexibleLoadouts](https://github.com/Alomare/FlexibleLoadouts)** (GPL-3.0-or-later): 로드아웃 화면 명령어 시그니처
+- **[SHODAN-HORAI/SHODAN-Stat-Editor](https://github.com/SHODAN-HORAI/SHODAN-Stat-Editor)** (GPL-3.0): 게임 GUI·글꼴 사용법
+- **[tyrypyrking/HD2-Transmog](https://github.com/tyrypyrking/HD2-Transmog)**: 진행도(소유) 표 구조
+- 그 밖의 내용은 이 프로젝트의 직접 분석이며 [docs](docs/)에 기록되어 있습니다.
 
-Nothing is sent anywhere, nothing bypasses anti-cheat and nothing unlocks content. Use at your own risk.
+## 라이선스
 
-## Credits
+GPL-3.0-or-later ([LICENSE](LICENSE)). 릴리즈 파일에는 게임 바이트코드·기계어가 들어 있지 않습니다.
+빌드 방법: [docs/PACKAGING.md](docs/PACKAGING.md) · 변경 기록: [CHANGELOG.md](CHANGELOG.md)
 
-- **HD2Runtime by SkyeShade** — https://github.com/SkyeShade/HD2Runtime: stratagem families and backpack weapons, ownership rule, menu input layout.
-- **[Alomare/FlexibleLoadouts](https://github.com/Alomare/FlexibleLoadouts)** (GPL-3.0-or-later): loadout screen instruction signatures.
-- **[SHODAN-HORAI/SHODAN-Stat-Editor](https://github.com/SHODAN-HORAI/SHODAN-Stat-Editor)** (GPL-3.0): engine GUI and font usage.
-- **[tyrypyrking/HD2-Transmog](https://github.com/tyrypyrking/HD2-Transmog)**: progression table layout facts.
-- Everything else comes from this project's own analysis, recorded in [docs](docs/).
-
-## License and source
-
-GPL-3.0-or-later ([LICENSE](LICENSE)). The release package contains no game bytecode or game machine code; code checks use fingerprints. Build instructions: [docs/PACKAGING.md](docs/PACKAGING.md). Changes: [CHANGELOG.md](CHANGELOG.md).
-
-Helldivers 2 is a trademark of Sony Interactive Entertainment / Arrowhead Game Studios. RLMmods is an unofficial fan project, not affiliated with or endorsed by them.
+Helldivers 2는 Sony Interactive Entertainment / Arrowhead Game Studios의 상표입니다. RLMmods는 비공식 팬 프로젝트이며 이들과 관련이 없습니다.

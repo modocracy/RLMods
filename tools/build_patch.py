@@ -67,7 +67,7 @@ FIXED_ZIP_TIME = (1980, 1, 1, 0, 0, 0)
 SOURCE_DIRS = ("src", "tools", "docs", "research", "config", "examples")
 SOURCE_EXTENSIONS = {".lua", ".py", ".md", ".txt", ".json", ".ini", ".toml", ".cfg"}
 SOURCE_ROOT_FILES = (
-    "README.md", "README.ko.md", "INSTALL.txt", "LICENSE", "LICENSE.txt",
+    "README.md", "README.en.md", "INSTALL.txt", "LICENSE", "LICENSE.txt",
     "CHANGELOG.md", "THIRD_PARTY.md", ".gitignore", "mod.json",
 )
 
