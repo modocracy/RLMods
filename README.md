@@ -27,7 +27,7 @@
 
 1. 게임 종료
 2. **HD2MM** 또는 **Arsenal**에서 예전 RLMmods 끄기
-3. [Releases](https://github.com/modocracy/RLMods/releases)의 `RLMmods-1.0.0.zip` 가져오기 → 활성화 → **Deploy**
+3. [Releases](https://github.com/modocracy/RLMods/releases)의 `RLMmods-1.0.1.zip` 가져오기 → 활성화 → **Deploy**
 
 제거: 게임 종료 → RLMmods 끄기 → Purge/Deploy
 

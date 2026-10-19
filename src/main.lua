@@ -246,6 +246,13 @@ local function tick()
         if RLM.navigation and RLM.navigation.active then RLM.navigation.exit(false) end
         return
     end
+    -- Hidden while the player has an item list open (armor, helmet, cape, weapon,
+    -- stratagem or booster); RLMmods' own actions close their lists before returning.
+    if not RLM.busy and P.byte(screen+S.layout.list_open)~=0 then
+        if U.gui then U.clear() end
+        if RLM.navigation and RLM.navigation.active then RLM.navigation.exit(false) end
+        return
+    end
     snapshot_wait=snapshot_wait-1
     if snapshot_wait<=0 then
         snapshot_ok,snapshot_reason=pcall(S.snapshot)

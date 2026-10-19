@@ -33,7 +33,7 @@ The three buttons sit on the right edge of your player card and appear with the 
 
 1. Close the game.
 2. In **HD2MM** or **Arsenal**, disable any older RLMmods package.
-3. Import `RLMmods-1.0.0.zip` from [Releases](https://github.com/modocracy/RLMods/releases), enable it and **Deploy**.
+3. Import `RLMmods-1.0.1.zip` from [Releases](https://github.com/modocracy/RLMods/releases), enable it and **Deploy**.
 
 Remove: close the game, disable RLMmods in the same manager, then Purge/Deploy.
 

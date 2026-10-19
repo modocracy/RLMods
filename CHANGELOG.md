@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 — 2026-10-19
+
+- Buttons hide while an item list is open (armor, helmet, cape, weapons, stratagems,
+  booster) and come back when it closes.
+
 ## 1.0.0 — 2026-10-19
 
 First public release, for Helldivers 2 game build 25480438.

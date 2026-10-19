@@ -1,6 +1,6 @@
-# Building RLMmods (1.0.0)
+# Building RLMmods (1.0.1)
 
-Current artifact: `dist/RLMmods-1.0.0.zip` (distributable, no game bytecode).
+Current artifact: `dist/RLMmods-1.0.1.zip` (distributable, no game bytecode).
 Disable all previous RLMmods packages before replacing. Feature changes are recorded in
 the UPDATE documents (latest: [0.5](UPDATE-0.5.0.md)).
 
@@ -48,13 +48,13 @@ Distributable build (no game bytecode; `STANDALONE_BOOT` replaces the original b
 ```powershell
 python -B tools/build_patch.py build `
   --compiler-dll 'C:\Program Files (x86)\Steam\steamapps\common\Helldivers 2in\lua51.dll' `
-  --output dist/RLMmods-1.0.0.zip
+  --output dist/RLMmods-1.0.1.zip
 ```
 
 Source package for a release (GPL source; no game files or build outputs):
 
 ```powershell
-python -B tools/build_patch.py source --output dist/RLMmods-1.0.0-source.zip
+python -B tools/build_patch.py source --output dist/RLMmods-1.0.1-source.zip
 ```
 
 Private build that embeds the exact original boot (kept for comparison):

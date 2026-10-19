@@ -46,7 +46,7 @@ GUID = "9e753d42-a2f4-49ca-90c9-f47539fdf87e"
 # manifest's top-level IconPath as a file name inside the mod archive.
 MOD_ICON = Path("docs/design/rlmmods-mod-icon-256.png")  # from rlmmods-mod-icon-512-v1.png by tools/make_ui_images.py
 MOD_ICON_NAME = "icon.png"
-DEFAULT_VERSION = "1.0.0"
+DEFAULT_VERSION = "1.0.1"
 DEFAULT_SOURCES = (
     "src/bootstrap.lua",
     "src/platform.lua",
