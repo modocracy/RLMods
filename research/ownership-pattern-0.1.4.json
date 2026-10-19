@@ -1,0 +1,21 @@
+{
+  "analysis": "static source-pattern comparison; no mod execution",
+  "pattern_length": 150,
+  "reference_length": 150,
+  "wildcard_offsets": [
+    99,
+    100,
+    101,
+    102
+  ],
+  "reference_masked_offsets": [
+    99,
+    100,
+    101,
+    102
+  ],
+  "fixed_byte_differences": [],
+  "reference": "https://github.com/tyrypyrking/HD2-Transmog/blob/f469851dcb5bf241a08be5329728ca649710896c/src/catalog_compat.lua",
+  "runtime_verified": false,
+  "tests_run": false
+}

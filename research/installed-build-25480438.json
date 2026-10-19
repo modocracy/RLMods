@@ -1,0 +1,441 @@
+{
+  "analysis": "static-file-inspection-only",
+  "game_executed": false,
+  "tests_run": false,
+  "runtime_verified": false,
+  "loaded_game_modules": false,
+  "game": {
+    "filename": "game.dll",
+    "size": 15522408,
+    "sha256": "2e2c3b7c2500646dadd5f2b4c6e0504dbb7e7896139f64cddc0d1813c718f51e",
+    "pe_timestamp": "0x6ab3b43f",
+    "sections": [
+      {
+        "name": "        ",
+        "rva": 4096,
+        "virtual_size": 34667155,
+        "raw_size": 8718336,
+        "file_offset": 1536,
+        "executable": true
+      },
+      {
+        "name": "        ",
+        "rva": 34672640,
+        "virtual_size": 5417484,
+        "raw_size": 825856,
+        "file_offset": 8719872,
+        "executable": false
+      },
+      {
+        "name": "        ",
+        "rva": 40091648,
+        "virtual_size": 18462204,
+        "raw_size": 138240,
+        "file_offset": 9545728,
+        "executable": false
+      },
+      {
+        "name": "        ",
+        "rva": 58556416,
+        "virtual_size": 1832304,
+        "raw_size": 550912,
+        "file_offset": 9683968,
+        "executable": false
+      },
+      {
+        "name": "        ",
+        "rva": 60391424,
+        "virtual_size": 8968,
+        "raw_size": 2048,
+        "file_offset": 10234880,
+        "executable": false
+      },
+      {
+        "name": "        ",
+        "rva": 60403712,
+        "virtual_size": 1160,
+        "raw_size": 512,
+        "file_offset": 10236928,
+        "executable": false
+      },
+      {
+        "name": "        ",
+        "rva": 60407808,
+        "virtual_size": 222660,
+        "raw_size": 10752,
+        "file_offset": 10237440,
+        "executable": false
+      },
+      {
+        "name": ".debug",
+        "rva": 60633088,
+        "virtual_size": 4096,
+        "raw_size": 1536,
+        "file_offset": 10248192,
+        "executable": false
+      },
+      {
+        "name": ".edata",
+        "rva": 60637184,
+        "virtual_size": 4096,
+        "raw_size": 512,
+        "file_offset": 10249728,
+        "executable": false
+      },
+      {
+        "name": ".vm_sec",
+        "rva": 60641280,
+        "virtual_size": 81920,
+        "raw_size": 81920,
+        "file_offset": 10250240,
+        "executable": false
+      },
+      {
+        "name": ".idata",
+        "rva": 60723200,
+        "virtual_size": 4096,
+        "raw_size": 512,
+        "file_offset": 10332160,
+        "executable": false
+      },
+      {
+        "name": ".tls",
+        "rva": 60727296,
+        "virtual_size": 8192,
+        "raw_size": 4608,
+        "file_offset": 10332672,
+        "executable": false
+      },
+      {
+        "name": ".rsrc",
+        "rva": 60735488,
+        "virtual_size": 4096,
+        "raw_size": 1536,
+        "file_offset": 10337280,
+        "executable": false
+      },
+      {
+        "name": ".winlice",
+        "rva": 60739584,
+        "virtual_size": 8806400,
+        "raw_size": 0,
+        "file_offset": 10338816,
+        "executable": true
+      },
+      {
+        "name": ".boot",
+        "rva": 69545984,
+        "virtual_size": 4773888,
+        "raw_size": 4773888,
+        "file_offset": 10338816,
+        "executable": true
+      },
+      {
+        "name": ".reloc",
+        "rva": 74321920,
+        "virtual_size": 405504,
+        "raw_size": 399376,
+        "file_offset": 15112704,
+        "executable": false
+      }
+    ],
+    "signatures": [
+      {
+        "name": "screen",
+        "candidate_rva": "0x1082ef0",
+        "signature_size": 25,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      },
+      {
+        "name": "category",
+        "candidate_rva": "0x146e0bc",
+        "signature_size": 18,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      },
+      {
+        "name": "refresh_a",
+        "candidate_rva": "0x18d194f",
+        "signature_size": 118,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      },
+      {
+        "name": "refresh_b",
+        "candidate_rva": "0x18d19c5",
+        "signature_size": 100,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      },
+      {
+        "name": "offers_count",
+        "candidate_rva": "0x146e1cf",
+        "signature_size": 32,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      },
+      {
+        "name": "marker",
+        "candidate_rva": "0x18d1440",
+        "signature_size": 72,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      },
+      {
+        "name": "kind_frv",
+        "candidate_rva": "0x146e2e0",
+        "signature_size": 55,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      },
+      {
+        "name": "ready_slots",
+        "candidate_rva": "0x189c3b8",
+        "signature_size": 223,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      },
+      {
+        "name": "ready_toggle",
+        "candidate_rva": "0x189c4d0",
+        "signature_size": 298,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      },
+      {
+        "name": "equip_tail",
+        "candidate_rva": "0x146e5f6",
+        "signature_size": 228,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      },
+      {
+        "name": "open_list",
+        "candidate_rva": "0x146e9d0",
+        "signature_size": 148,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      },
+      {
+        "name": "set_slot",
+        "candidate_rva": "0x189d050",
+        "signature_size": 74,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      },
+      {
+        "name": "focus",
+        "candidate_rva": "0x1895770",
+        "signature_size": 23,
+        "rva_has_file_bytes": false,
+        "match_at_candidate": null,
+        "file_match_count": 0,
+        "file_offsets": [],
+        "reason": "Candidate RVA has no corresponding raw section bytes"
+      }
+    ]
+  },
+  "engine": {
+    "filename": "helldivers2.exe",
+    "size": 14957160,
+    "sha256": "f5fee03dcfdb2e553a4752c283590950ac13316b376d8196aa556ff0400d5f06",
+    "pe_timestamp": "0x6ab382e4",
+    "sections": [
+      {
+        "name": "        ",
+        "rva": 4096,
+        "virtual_size": 20919884,
+        "raw_size": 6697984,
+        "file_offset": 1536,
+        "executable": true
+      },
+      {
+        "name": "        ",
+        "rva": 20926464,
+        "virtual_size": 3542,
+        "raw_size": 2048,
+        "file_offset": 6699520,
+        "executable": true
+      },
+      {
+        "name": "        ",
+        "rva": 20930560,
+        "virtual_size": 4831658,
+        "raw_size": 972288,
+        "file_offset": 6701568,
+        "executable": false
+      },
+      {
+        "name": "        ",
+        "rva": 25763840,
+        "virtual_size": 15977784,
+        "raw_size": 94720,
+        "file_offset": 7673856,
+        "executable": false
+      },
+      {
+        "name": "        ",
+        "rva": 41742336,
+        "virtual_size": 1093476,
+        "raw_size": 346112,
+        "file_offset": 7768576,
+        "executable": false
+      },
+      {
+        "name": "        ",
+        "rva": 42835968,
+        "virtual_size": 252,
+        "raw_size": 512,
+        "file_offset": 8114688,
+        "executable": false
+      },
+      {
+        "name": "        ",
+        "rva": 42840064,
+        "virtual_size": 12,
+        "raw_size": 512,
+        "file_offset": 8115200,
+        "executable": false
+      },
+      {
+        "name": "        ",
+        "rva": 42844160,
+        "virtual_size": 16,
+        "raw_size": 512,
+        "file_offset": 8115712,
+        "executable": false
+      },
+      {
+        "name": "        ",
+        "rva": 42848256,
+        "virtual_size": 71088,
+        "raw_size": 18944,
+        "file_offset": 8116224,
+        "executable": false
+      },
+      {
+        "name": "        ",
+        "rva": 42921984,
+        "virtual_size": 374732,
+        "raw_size": 60416,
+        "file_offset": 8135168,
+        "executable": false
+      },
+      {
+        "name": ".debug",
+        "rva": 43298816,
+        "virtual_size": 4096,
+        "raw_size": 2048,
+        "file_offset": 8195584,
+        "executable": false
+      },
+      {
+        "name": ".edata",
+        "rva": 43302912,
+        "virtual_size": 4096,
+        "raw_size": 512,
+        "file_offset": 8197632,
+        "executable": false
+      },
+      {
+        "name": ".vm_sec",
+        "rva": 43307008,
+        "virtual_size": 81920,
+        "raw_size": 81920,
+        "file_offset": 8198144,
+        "executable": false
+      },
+      {
+        "name": ".idata",
+        "rva": 43388928,
+        "virtual_size": 4096,
+        "raw_size": 2048,
+        "file_offset": 8280064,
+        "executable": false
+      },
+      {
+        "name": ".tls",
+        "rva": 43393024,
+        "virtual_size": 20480,
+        "raw_size": 19968,
+        "file_offset": 8282112,
+        "executable": false
+      },
+      {
+        "name": ".rsrc",
+        "rva": 43413504,
+        "virtual_size": 71168,
+        "raw_size": 71168,
+        "file_offset": 8302080,
+        "executable": false
+      },
+      {
+        "name": ".winlice",
+        "rva": 43487232,
+        "virtual_size": 10649600,
+        "raw_size": 0,
+        "file_offset": 8373248,
+        "executable": true
+      },
+      {
+        "name": ".boot",
+        "rva": 54136832,
+        "virtual_size": 5982208,
+        "raw_size": 5982208,
+        "file_offset": 8373248,
+        "executable": true
+      },
+      {
+        "name": ".reloc",
+        "rva": 60121088,
+        "virtual_size": 598016,
+        "raw_size": 591376,
+        "file_offset": 14355456,
+        "executable": false
+      }
+    ],
+    "signatures": []
+  },
+  "limitations": [
+    "No unpacking, process memory read, native call or live state observation",
+    "No match in packed file does not establish a runtime signature mismatch",
+    "Equipment selection, save, widget registration and booster rules remain unresolved"
+  ]
+}

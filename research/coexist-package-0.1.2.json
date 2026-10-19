@@ -1,0 +1,17 @@
+{
+  "artifact": "RLMmods-0.1.2-bingus-coexist-private-untested.zip",
+  "zip_bytes": 34329,
+  "zip_sha256": "5925605fad5bbb5e38c34fc484f922752b181bb3b02e78d77d610bd6eb549d3e",
+  "archive_bytes": 33440,
+  "resources": [
+    {
+      "name_hash": "0xf476df93691895fa",
+      "type_hash": "0xa14e8dfa2cd117e2",
+      "main_bytes": 33233
+    }
+  ],
+  "game_executed": false,
+  "tests_run": false,
+  "runtime_verified": false,
+  "method": "read ZIP and archive resource table, not runtime execution"
+}

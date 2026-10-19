@@ -1,0 +1,6 @@
+dist/
+build/
+local_inputs/
+*.log
+__pycache__/
+.venv/
